@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Code Runner</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.2/full/pyodide.js"></script>
+</head>
+<body>
+  <div id="container" style="display: flex; gap: 20px; padding: 20px;">
+    
+    <!-- Problem List -->
+    <div id="problems">
+      <h3>Choose a Problem</h3>
+      <ul id="problem-list"></ul>
+    </div>
+
+    <!-- Main Content -->
+    <div style="flex-grow: 1;">
+      <!-- Problem Description -->
+      <div id="problem">
+        <h2 id="title"></h2>
+        <p id="desc"></p>
+        <div>
+          <strong>Sample Input:</strong>
+          <pre id="sample-input"></pre>
+          <strong>Sample Output:</strong>
+          <pre id="sample-output"></pre>
+        </div>
+      </div>
+
+      <!-- Code Editor -->
+      <div id="editor" style="margin-top: 20px;">
+        <textarea id="code" rows="15" cols="80" placeholder="Write your code here..."></textarea>
+
+        <div style="margin-top: 10px;">
+          <label><strong>Custom Input:</strong></label><br />
+          <textarea id="stdin" rows="3" cols="80" placeholder="Enter custom input..."></textarea><br /><br />
+
+          <button onclick="runCustomTest()">Run</button>
+          <button onclick="submitCode()">Submit</button>
+
+          <h3>Output:</h3>
+          <pre id="output"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

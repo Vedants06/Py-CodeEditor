@@ -1,0 +1,16 @@
+{
+  "title": "Sum of Two Numbers",
+  "description": "Write a program to input two numbers and output their sum.",
+  "sample_input": "5\n7",
+  "sample_output": "12",
+  "starter_code": "a = int(input())\nb = int(input())\nprint(a + b)",
+  "input": "5\n7",
+  "expected_output": "12",
+  "test_cases": [
+    { "input": "1\n2", "expected": "3" },
+    { "input": "10\n20", "expected": "30" },
+    { "input": "-1\n1", "expected": "0" },
+    { "input": "100\n200", "expected": "300" },
+    { "input": "0\n0", "expected": "0" }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Sum of Two Numbers",
+  "description": "Write a program that reads two integers and prints their sum.",
+  "sample_input": "2 3",
+  "sample_output": "5",
+  "starter_code": "a, b = map(int, input().split())\n# your code here",
+  "input": "4 5",
+  "test_cases": [
+    { "input": "1 2", "expected": "3" },
+    { "input": "5 7", "expected": "12" },
+    { "input": "10 0", "expected": "10" },
+    { "input": "100 200", "expected": "300" },
+    { "input": "-1 1", "expected": "0" }
+  ]
+}
